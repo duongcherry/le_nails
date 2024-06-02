@@ -40,9 +40,8 @@ body{
   margin:0;
   font-size: .75rem;
   background-color: antiquewhite;
-  position:fixed;
-  z-index:999;
-  width:100%;
+
+ 
 }
 
 h1,h2,h4,h3{
@@ -74,7 +73,7 @@ h1,h2,h4,h3{
 }
 
 
-.hero_box{
+/* .hero_box{
   background-color: #c81a71;
   height:120px;
   width:120px;
@@ -85,7 +84,7 @@ h1,h2,h4,h3{
   display:flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .hero_box-text{
   color: white;
@@ -105,82 +104,30 @@ h1,h2,h4,h3{
 
 }
 
-nav{
-  position:absolute;
-  text-align: left;
-  top:100%;
-  left:0;
-  background-color: antiquewhite;
-  width:100%;
-  display:none;
-
-}
 
 nav a:hover{
   color:rgb(227, 84, 240);
 }
 
-.nav-toggle:checked ~ nav{
-  display:block;
-}
-
-.nav-toggle{
-  display:none;
-}
-
-.nav-toggle-label{
-  position: absolute;
-  top: 0;
-  left:10;
-  /* border:1px solid red; */
-  height:100%;
-  display:flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-display:block;
-background: white;
-height:2px;
-width:2em;
-border-radius: 2px;
-position: relative;
-}
-
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content:'';
-  position: absolute;
-}
-
-.nav-toggle-label span::before{
-  bottom:7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
 
 .nav-list{
   list-style:none;
   margin:0;
-  margin-left: .51em;
-  
+  padding:0;
 }
 
-.nav-items{
-  padding-top: 1em;
-  /* border:1px solid red; */
-}
+
 
 .nav-links{
   color: black;
   text-decoration: none;
   padding:0;
 }
+
+.nav-items{
+  padding-top: 1.5em;
+}
+
 .nav-button{
   color:rgb(0, 89, 255);
 }
@@ -253,23 +200,18 @@ img,
     display:flex;
     justify-content: flex-end;
     align-items:center;
-    width:100%;
+
   }
 
   .nav-list{
     display:flex;
-    justify-content: space-between;
- 
   }
 
   .nav-items{
-    padding-left:1em;
-    padding-top:0;
+    padding:0;
+    padding-left: 1em;
   }
-
-  .nav-button{
-    display:block;
-  }
+ 
 
   .hero_text-overlay h1{
     color:rgb(255, 255, 255);
@@ -299,24 +241,10 @@ img,
     text-align: left;
   }
 
-  .nav-toggle-label{
-    display:none;
-  }
-
-  .header{}
-
-}
-
-@media (min-width:601px) and (max-width:900px){
-
-
- /* .header-logo{
-  margin: auto 0;
-  } */
-
-
 
 
 
 
 }
+
+
